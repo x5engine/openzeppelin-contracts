@@ -77,6 +77,13 @@ contract PaymentSplitter is Context {
     }
 
     /**
+     * @dev Getter for the count of the payees.
+     */
+    function totalPayees() public view returns (uint256) {
+        return _payees.length;
+    }
+    
+    /**
      * @dev Getter for the amount of shares held by an account.
      */
     function shares(address account) public view returns (uint256) {
